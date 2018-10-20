@@ -19,10 +19,19 @@ def path():
     })
     return data
 
-@app.route('/bad')
-def bad():
-    name = "Bad"
-    return name
+@app.route('/test',methods = ['GET', 'POST'])
+def test():
+    if request.method == 'POST':
+       ao = request.args.get('tes')
+       
+       date = jsonify({
+        "tes":ao,
+        #"age":age
+       })
+       return date
+
+    else :
+       return "non"
 
 ## おまじない
 if __name__ == "__main__":
