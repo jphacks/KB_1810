@@ -21,7 +21,8 @@ open_path = 'sample_img/'
 
 #detection関数
 def inputdata(image_name):
-    options = {"model": "cfg/yolov2-voc.cfg", "load": "bin/yolo_learn.weights", "threshold": 0.4, "gpu": 0.1}
+    os.chdir('/var/www/KB_1810/learn/')
+    options = {"model": "/var/www/KB_1810/learn/cfg/yolov2-voc.cfg", "load": "/var/www/KB_1810/learn/bin/yolo_learn.weights", "threshold": 0.4, "gpu": 0.3}
 
     tfnet = TFNet(options)
 
