@@ -136,5 +136,6 @@ def color_detection(image_name):
     labels = kmeans_modeluv.labels_
     print(np.sum(labels == 0), np.sum(labels == 1), np.sum(labels == 2), np.sum(labels == 3), np.sum(labels == 4))
     print(len(labels))
+    return 1
 
-color_detection('kondate.jpg')
+z = color_detection('kondate.jpg')
