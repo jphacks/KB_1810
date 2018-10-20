@@ -22,11 +22,24 @@ def path():
 @app.route('/test',methods = ['GET', 'POST'])
 def test():
     if request.method == 'POST':
-       ao = request.args.get('tes')
+       #ao = request.args.get('tes')
        
-       date = jsonify({
-        "tes":ao,
-        #"age":age
+       date = str({
+        "color1":'1',
+	"color2":'2',
+	"color3":'3',
+	"color4":'4',
+	"color5":'5',
+	"per1":'13',
+	"per2":'39',
+	"per3":'4',
+	"per4":'15',
+	"per5":'29',
+	"point1":'0',
+	"point2":'1',
+	"point3":'2',
+	"point4":'3',
+	"point5":'4',
        })
        return date
 
