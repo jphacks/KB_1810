@@ -35,11 +35,7 @@ def test():
 	"per3":'4',
 	"per4":'15',
 	"per5":'29',
-	"point1":'0',
-	"point2":'1',
-	"point3":'2',
-	"point4":'3',
-	"point5":'4',
+	"point1":'3',
        })
        return date
 
@@ -48,4 +44,4 @@ def test():
 
 ## おまじない
 if __name__ == "__main__":
-    app.run(debug=True)
+   app.run(debug=True)
