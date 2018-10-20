@@ -14,7 +14,7 @@ app.config["JSON_SORT_KEYS"] = False #ソートをそのまま
 @app.route('/good',methods=['POST'])
 def good():
     #import main
-    img_data = request.files['bmp'].read()
+    img_data = request.files['img_data'].read()
     img = Image.open(io.BytesIO(img_data))
     img.save('test.jpg')
 
