@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, render_template, request, jsonify
+import main
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False #日本語文字化け対策
 app.config["JSON_SORT_KEYS"] = False #ソートをそのまま
@@ -41,6 +42,12 @@ def test():
 
     else :
        return "non"
+
+@app.route('/learn')
+def learn():
+    c,f,r = main.color_point('kondate.jpg')
+    name = r
+    return name
 
 ## おまじない
 if __name__ == "__main__":
