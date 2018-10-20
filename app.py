@@ -35,10 +35,24 @@ def good():
     return data
 
 
-@app.route('/bad')
+@app.route('/bad',method=['POST'])
 def bad():
+    dataA = request.arg.get('A')
+    dataB = request.arg.get('B')
+    item_data = jsonify({
+	'A':dataA,
+	'B':dataB
+    })
     name = "Good"
     return name
+
+@app.route('/learn')
+def learn():
+    from learn import main
+    z = main.color_detection('kondate.jpg')
+    
+    
+    return z
 
 
 ## おまじない
