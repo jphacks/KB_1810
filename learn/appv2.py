@@ -46,7 +46,7 @@ def test():
 @app.route('/learn')
 def learn():
     c,f,r = main.color_point('kondate.jpg')
-    name = r
+    name = '!!'
     return name
 
 ## おまじない
