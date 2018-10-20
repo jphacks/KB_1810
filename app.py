@@ -45,7 +45,7 @@ def bad():
     })
     name = "Good"
     return name
-
+'''
 @app.route('/learn')
 def learn():
     from learn import main
@@ -53,7 +53,11 @@ def learn():
     
     
     return z
-
+'''
+@app.route('/test')
+def test():
+    tes = 'test'
+    return tes
 
 ## おまじない
 if __name__ == "__main__":
