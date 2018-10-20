@@ -26,7 +26,7 @@ def test():
        
        date = str({
         "color1":'1',
-	"color2":'2',
+	"color2":'1',
 	"color3":'3',
 	"color4":'4',
 	"color5":'5',
