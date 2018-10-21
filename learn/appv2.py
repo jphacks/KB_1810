@@ -5,6 +5,8 @@ app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False #日本語文字化け対策
 app.config["JSON_SORT_KEYS"] = False #ソートをそのまま
 
+center, per_list, point = main.color_point('kondate.jpg')
+
 @app.route('/')
 def hello():
     name = "Hello World"
@@ -45,7 +47,7 @@ def test():
 
 @app.route('/learn')
 def learn():
-    c,f,r = main.color_point('kondate.jpg')
+    global center, par_list, point
     name = '!!'
     return name
 
