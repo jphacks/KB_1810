@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, render_template, request, jsonify
-import main
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False #日本語文字化け対策
 app.config["JSON_SORT_KEYS"] = False #ソートをそのまま
 
-center, per_list, point = main.color_point('kondate.jpg')
 
 @app.route('/')
 def hello():
@@ -44,12 +42,6 @@ def test():
 
     else :
        return "non"
-
-@app.route('/learn')
-def learn():
-    global center, par_list, point
-    name = '!!'
-    return name
 
 ## おまじない
 if __name__ == "__main__":
