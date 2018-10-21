@@ -45,16 +45,16 @@ def test():
            return str(
               {       
                   "color1":'5',
-                  "color2":'2',
-                  "color3":'2',
-                  "color4":'0',
-                  "color5":'10',
-                  "per1":'38',
-                  "per2":'20',
+                  "color2":'0',
+                  "color3":'0',
+                  "color4":'10',
+                  "color5":'8',
+                  "per1":'40',
+                  "per2":'35',
                   "per3":'17',
-                  "per4":'13',
-                  "per5":'12',
-                  "point1":'4',
+                  "per4":'4',
+                  "per5":'4',
+                  "point1":'1',
               }       
           )       
     else:
