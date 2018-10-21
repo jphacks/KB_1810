@@ -1,7 +1,7 @@
 
 
 ## 写真飯
-[![Product Name](image.png)](https://youtu.be/VMOdSHqlPaw)
+i[![Product Name](food_picture.jpg)](https://youtu.be/VMOdSHqlPaw)
 
 ### Food Picture x Tech
 
@@ -34,8 +34,8 @@
 食事の彩を気にすることでバランスの良い食事を楽しく食べれるようになります。
 
 ### 今後の展望
-今回は実現できなかったが、今後改善すること、どのように展開していくことが可能かについて記載をしてください。
-
+* 評価の高い写真は自動的にtwitterに投稿
+* 少ない色彩を補助する食材を提案
 
 ## 開発内容・開発技術
 ### 使用言語
